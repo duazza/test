@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1100.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="292.0" fitWidth="298.0" layoutX="64.0" layoutY="23.0">
+         <image>
+            <Image url="@../../../../../Downloads/qpropertylogo-Photoroom.png-Photoroom.png" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="453.0" layoutY="23.0" prefHeight="324.0" prefWidth="607.0" text="SYSTEM HELP REPAIR MAINTENANCE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="71.0" />
+         </font>
+      </Label>
+      <Button layoutX="864.0" layoutY="804.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="212.0" style="-fx-background-color: GOLD;" text="BACK" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="41.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <TextArea layoutX="42.0" layoutY="382.0" prefHeight="417.0" prefWidth="1027.0" text="This interface allows you to add new repair/maintenance records and search the database by ID or type.&#10;&#10;Buttons and Their Functions&#10;     ABOUT: View application information.&#10;     EXIT: Returns to login page. Signs out user.&#10;     Search Database:&#10;     SEARCH (by ID): Executes the search based on the repair ID.&#10;     SEARCH (by TYPE): Executes the search based on the job type.&#10;     VIEW ALL: Displays all records.&#10;&#10;Adding a New Repair/Maintenance Job&#10;     Fields to Fill:&#10;          REPAIR ID: Auto-generated ID for the repair/maintenance job.&#10;          PROPERTY ID: Enter the property ID associated with the.&#10;          JOB DETAILS: Enter the details of the job.&#10;          BOOKING DATE: Enter the booking date of the job.&#10;          CHARGE: Enter the charge for the job.&#10;          SERVICE STAFF NAME: Enter the name of the service staff assigned to the job.&#10;          JOB TYPE: Select the job type from the dropdown menu.&#10;          STATUS: Select the status of the job from the dropdown menu.&#10;          COMPLETION DATE: Enter the completion date of the job.&#10;Submit:&#10;          Click the ADD button to save the repair/maintenance job information.&#10;          Click the CANCEL button to clear the input fields.&#10;&#10;Using the Search Database&#10;     Performing a Search:&#10;          Enter the repair ID or job type in the respective fields.&#10;          Click the SEARCH button to find matching records.&#10;          Click the VIEW ALL button to display all records.&#10;          Click the CLEAR button to reset the search fields.&#10;&#10;Filtering Results:&#10;          Click the COMPLETED button to view completed jobs.&#10;          Click the UNCOMPLETED button to view uncompleted jobs.">
+         <font>
+            <Font name="Calibri Italic" size="24.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

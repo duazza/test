@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1100.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qproperty.AboutCustomerController">
+   <children>
+      <ImageView fitHeight="292.0" fitWidth="298.0" layoutX="64.0" layoutY="23.0">
+         <image>
+            <Image url="@qpropertylogo.png" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="454.0" layoutY="54.0" prefHeight="242.0" prefWidth="607.0" text="SYSTEM HELP CUSTOMER" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="84.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="864.0" layoutY="804.0" mnemonicParsing="false" onAction="#handleBackAction" prefHeight="76.0" prefWidth="212.0" style="-fx-background-color: GOLD;" text="BACK" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="41.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <TextArea layoutX="42.0" layoutY="382.0" prefHeight="417.0" prefWidth="1027.0" text="This interface allows you to add new customers and search the database by phone or last name.&#10;&#10;Buttons and Their Functions&#10;     ADD NEW CUSTOMER: Button to initiate adding a new customer.&#10;     ABOUT: View application information.&#10;     EXIT:  Returns to login page. Signs out user.&#10;&#10;Search Database:&#10;     SEARCH: Executes the search based on input criteria.&#10;     CLEAR: Clears the search fields.&#10;&#10;Search Criteria:&#10;     BY PHONE: Search the database by phone number.&#10;     BY LAST NAME: Search the database by last name.&#10;&#10;Adding a New Customer&#10;     Fields to Fill:&#10;          CUSTOMER ID: Auto-generated ID for the customer.&#10;          FIRST NAME: Enter the customer's first name.&#10;          LAST NAME: Enter the customer's last name.&#10;          STREET NUMBER: Enter the street number of the customer's address.&#10;          STREET NAME: Enter the street name of the customer's address.&#10;          CITY: Enter the city of the customer's address.&#10;          STATE: Enter the state of the customer's address.&#10;          POSTAL CODE: Enter the postal code of the customer's address.&#10;          PHONE NUMBER: Enter the customer's phone number.&#10;     Submit:&#10;          Click the ADD / UPDATE button to save the customer information.&#10;&#10;Using the Search Database&#10;     Performing a Search:&#10;          Enter the phone number or last name in the respective fields.&#10;          Click the SEARCH button to find matching records.&#10;          Click the CLEAR button to reset the search fields.">
+         <font>
+            <Font name="Calibri Italic" size="23.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900" prefWidth="1100" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qproperty.ReportingTabController">
+    <ImageView fitHeight="155.0" fitWidth="192.0">
+        <image>
+            <Image url="@qpropertylogo.png" />
+        </image>
+    </ImageView>
+    <Label layoutX="111.0" layoutY="5.0" prefHeight="145.0" prefWidth="878.0" text="QPROPERTY INFORMATION MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="#d0c9c9" wrapText="true">
+        <font>
+            <Font name="Comic Sans MS Bold" size="44.0" />
+        </font>
+    </Label>
+    <BarChart layoutX="14.0" layoutY="155.0" prefHeight="610.0" prefWidth="1079.0">
+        <xAxis>
+            <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+    </BarChart>
+    <TextField layoutX="177.0" layoutY="786.0" prefHeight="50.0" prefWidth="200.0">
+        <font>
+            <Font name="Calibri" size="24.0" />
+        </font>
+    </TextField>
+    <Label layoutX="38.0" layoutY="768.0" prefHeight="78.0" prefWidth="132.0" text="MINIMUM CHARGE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <TextField layoutX="531.0" layoutY="786.0" prefHeight="50.0" prefWidth="200.0">
+        <font>
+            <Font name="Calibri" size="24.0" />
+        </font>
+    </TextField>
+    <Label layoutX="392.0" layoutY="768.0" prefHeight="78.0" prefWidth="132.0" text="MAXIUM CHARGE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <TextField layoutX="886.0" layoutY="786.0" prefHeight="50.0" prefWidth="200.0">
+        <font>
+            <Font name="Calibri" size="24.0" />
+        </font>
+    </TextField>
+    <Label layoutX="747.0" layoutY="768.0" prefHeight="78.0" prefWidth="132.0" text="AVERAGE CHARGE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <Button layoutX="939.0" layoutY="31.0" mnemonicParsing="false" onAction="#testReportintTabController" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GRAY;" text="ABOUT" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="21.0" />
+        </font>
+        <effect>
+            <Lighting>
+                <bumpInput>
+                    <Shadow />
+                </bumpInput>
+                <light>
+                </light>
+            </Lighting>
+        </effect>
+    </Button>
+    <Button layoutX="939.0" layoutY="85.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GRAY;" text="EXIT" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="21.0" />
+        </font>
+        <effect>
+            <Lighting>
+                <bumpInput>
+                    <Shadow />
+                </bumpInput>
+                <light>
+                </light>
+            </Lighting>
+        </effect>
+    </Button>
+</AnchorPane>

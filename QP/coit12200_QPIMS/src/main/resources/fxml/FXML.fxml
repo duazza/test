@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="900" prefWidth="1100" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="160.0" fitWidth="150.0" layoutX="14.0">
+         <image>
+            <Image url="@../../../Downloads/qpropertylogo-Photoroom.png-Photoroom.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="134.0" layoutY="8.0" prefHeight="145.0" prefWidth="576.0" text="QPROPERTY INFORMATION MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="#d0c9c9" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="715.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="380.0" style="-fx-background-color: GOLD;" text="ADD NEW PROPERTY">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField layoutX="894.0" layoutY="64.0" prefHeight="50.0" prefWidth="200.0" text="AUTO GENERATED">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextField>
+      <Label layoutX="759.0" layoutY="75.0" text="PROPERTY ID" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="894.0" layoutY="120.0" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextField>
+      <Label layoutX="722.0" layoutY="131.0" text="STREET NUMBER" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="894.0" layoutY="176.0" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextField>
+      <Label layoutX="750.0" layoutY="187.0" text="STREET NAME" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="894.0" layoutY="232.0" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextField>
+      <Label layoutX="847.0" layoutY="243.0" text="CITY" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="894.0" layoutY="289.0" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextField>
+      <Label layoutX="829.0" layoutY="300.0" text="STATE" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="894.0" layoutY="346.0" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextField>
+      <Label layoutX="752.0" layoutY="357.0" text="POSTAL CODE" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="894.0" layoutY="402.0" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextField>
+      <Label layoutX="752.0" layoutY="413.0" text="AGENT NAME" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="892.0" layoutY="750.0" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextField>
+      <Label layoutX="734.0" layoutY="761.0" text="CUSTOMER ID" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="893.0" layoutY="457.0" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextField>
+      <Label layoutX="790.0" layoutY="468.0" text="# ROOMS" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="524.0" text="CARPARK" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="768.0" layoutY="580.0" text="BUILD YEAR" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="727.0" layoutY="670.0" text="PROPERTY TYPE" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="715.0" layoutY="813.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="380.0" style="-fx-background-color: GOLD;" text="ADD / UPDATE" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="8.0" layoutY="177.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="675.0" style="-fx-background-color: GOLD;" text="SEARCH DATABASE">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="7.0" layoutY="730.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="331.0" style="-fx-background-color: GOLD;" text="BY ADDRESS" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <TextField layoutX="7.0" layoutY="686.0" prefHeight="39.0" prefWidth="334.0">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font>
+      </TextField>
+      <Button layoutX="557.0" layoutY="734.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="126.0" style="-fx-background-color: GOLD;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="557.0" layoutY="688.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GOLD;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <TableView layoutX="7.0" layoutY="226.0" prefHeight="458.0" prefWidth="676.0">
+         <columns>
+            <TableColumn prefWidth="29.0" text="ID" />
+            <TableColumn prefWidth="43.0" text="#" />
+            <TableColumn prefWidth="153.0" text="STREET" />
+            <TableColumn prefWidth="75.0" text="CITY" />
+            <TableColumn prefWidth="42.0" text="STATE" />
+            <TableColumn prefWidth="56.0" text="POSTAL" />
+            <TableColumn prefWidth="100.0" text="PHONE" />
+            <TableColumn prefWidth="126.0" text="AGENT" />
+            <TableColumn prefWidth="51.0" text="CUST ID" />
+         </columns>
+      </TableView>
+      <Button layoutX="8.0" layoutY="823.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GRAY;" text="ABOUT" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="145.0" layoutY="823.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GRAY;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="21.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TextArea layoutX="892.0" layoutY="622.0" prefHeight="125.0" prefWidth="200.0">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextArea>
+      <ChoiceBox layoutX="894.0" layoutY="512.0" prefHeight="49.0" prefWidth="198.0" />
+      <DatePicker layoutX="895.0" layoutY="568.0" prefHeight="47.0" prefWidth="198.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1100.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qproperty.MainScreenController">
+    <tabs>
+        <Tab fx:id="MainTab" text="Main">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: teal;">
+                    <children>
+                        <ImageView fitHeight="454.0" fitWidth="558.0" layoutX="256.0" layoutY="6.0">
+                            <image>
+                                <Image url="@qpropertylogo.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="customerButton" layoutX="187.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleCustomerAction" prefHeight="135.0" prefWidth="314.0" style="-fx-background-color: GOLD;" text="CUSTOMER DATA" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                            <font>
+                                <Font name="Calibri Bold" size="41.0" />
+                            </font>
+                            <effect>
+                                <InnerShadow />
+                            </effect>
+                        </Button>
+                        <Button fx:id="propertyButton" layoutX="186.0" layoutY="672.0" mnemonicParsing="false" onAction="#handlePropertyAction" prefHeight="135.0" prefWidth="317.0" style="-fx-background-color: GOLD;" text="PROPERTY DATA" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                            <font>
+                                <Font name="Calibri Bold" size="41.0" />
+                            </font>
+                            <effect>
+                                <InnerShadow />
+                            </effect>
+                        </Button>
+                        <Button fx:id="repairButton" layoutX="588.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleRepairAction" prefHeight="145.0" prefWidth="318.0" style="-fx-background-color: GOLD;" text="REPAIR  MAINTENANCE" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                            <font>
+                                <Font name="Calibri Bold" size="41.0" />
+                            </font>
+                            <effect>
+                                <InnerShadow />
+                            </effect>
+                        </Button>
+                        <Button fx:id="reportingButton" layoutX="588.0" layoutY="663.0" mnemonicParsing="false" onAction="#handleReportingAction" prefHeight="145.0" prefWidth="318.0" style="-fx-background-color: GOLD;" text="REPORTING" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                            <font>
+                                <Font name="Calibri Bold" size="41.0" />
+                            </font>
+                            <effect>
+                                <InnerShadow />
+                            </effect>
+                        </Button>
+                        <Button fx:id="aboutButton" layoutX="960.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleAboutAction" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GRAY;" text="ABOUT" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri Bold" size="21.0" />
+                            </font>
+                            <effect>
+                                <Lighting>
+                                    <bumpInput>
+                                        <Shadow />
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant />
+                                    </light>
+                                </Lighting>
+                            </effect>
+                        </Button>
+                        <Button fx:id="exitButton" layoutX="960.0" layoutY="63.0" mnemonicParsing="false" onAction="#handleExitAction" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GRAY;" text="EXIT" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri Bold" size="21.0" />
+                            </font>
+                            <effect>
+                                <Lighting>
+                                    <bumpInput>
+                                        <Shadow />
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant />
+                                    </light>
+                                </Lighting>
+                            </effect>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    <Tab fx:id="customerTab" text="Customer Data">
+      <content>
+            <fx:include source="customerTab.fxml"> </fx:include>
+      </content>
+    </Tab>
+        <Tab fx:id="PropertyTab" text="Property Data">
+            <content>
+                <fx:include source="propertyTab.fxml"> </fx:include>
+      </content>
+    </Tab>
+      <Tab fx:id="RepairTab" text="Repair / Maintenance">
+         <content>
+             <fx:include source="repairJobTab.fxml"> </fx:include>
+         </content>
+      </Tab>
+      <Tab fx:id="ReportingTab" text="Reporting">
+         <content>
+             <fx:include source="reportTab.fxml"> </fx:include>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

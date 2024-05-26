@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900" prefWidth="1100" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qproperty.CustomerTabController">
+
+    <children>
+        <ImageView fitHeight="221.0" fitWidth="213.0" layoutX="88.0" layoutY="13.0">
+            <image>
+                <Image url="@qpropertylogo.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="14.0" layoutY="234.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="386.0" style="-fx-background-color: GOLD;" text="ADD NEW CUSTOMER">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Button>
+        <TextField fx:id="FNameField" layoutX="201.0" layoutY="341.0" prefHeight="50.0" prefWidth="200.0">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font></TextField>
+        <Label layoutX="74.0" layoutY="352.0" text="FIRST NAME" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="LNameField" layoutX="200.0" layoutY="400.0" prefHeight="50.0" prefWidth="200.0">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font></TextField>
+        <Label layoutX="77.0" layoutY="411.0" text="LAST NAME" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="136.0" layoutY="645.0" text="STATE" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="PostCodeField" layoutX="200.0" layoutY="693.0" prefHeight="50.0" prefWidth="200.0">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font></TextField>
+        <Label layoutX="57.0" layoutY="704.0" text="POSTAL CODE" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="StreetNoField" layoutX="201.0" layoutY="458.0" prefHeight="50.0" prefWidth="200.0">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font></TextField>
+        <Label layoutX="27.0" layoutY="469.0" text="STREET NUMBER" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="StreetNameField" layoutX="201.0" layoutY="518.0" prefHeight="50.0" prefWidth="200.0">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font></TextField>
+        <Label layoutX="56.0" layoutY="529.0" text="STREET NAME" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="CityField" layoutX="201.0" layoutY="576.0" prefHeight="50.0" prefWidth="200.0">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font></TextField>
+        <Label layoutX="153.0" layoutY="587.0" text="CITY" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="phoneField" layoutX="199.0" layoutY="750.0" prefHeight="50.0" prefWidth="200.0">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font></TextField>
+        <Label layoutX="27.0" layoutY="761.0" text="PHONE NUMBER" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="IDField" editable="false" layoutX="200.0" layoutY="285.0" prefHeight="50.0" prefWidth="200.0" text="AUTO GENERATED">
+            <font>
+                <Font name="Calibri" size="21.0" />
+            </font></TextField>
+        <Label layoutX="56.0" layoutY="296.0" text="CUSTOMER ID" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="addButton" layoutX="14.0" layoutY="813.0" mnemonicParsing="false" onAction="#handleAddAction" prefHeight="44.0" prefWidth="386.0" style="-fx-background-color: GOLD;" text="ADD / UPDATE" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <Button layoutX="415.0" layoutY="144.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="681.0" style="-fx-background-color: GOLD;" text="SEARCH DATABASE">
+            <font>
+                <Font name="Calibri Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="searchPhoneButton" layoutX="415.0" layoutY="758.0" mnemonicParsing="false" onAction="#handleSearchPhoneAction" prefHeight="41.0" prefWidth="241.0" style="-fx-background-color: GOLD;" text="BY PHONE" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="21.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <TextField fx:id="searchPhoneField" layoutX="415.0" layoutY="714.0" prefHeight="39.0" prefWidth="241.0">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font></TextField>
+        <Button fx:id="searchLastNameButton" layoutX="660.0" layoutY="757.0" mnemonicParsing="false" onAction="#handleSearchLastAction" prefHeight="42.0" prefWidth="241.0" style="-fx-background-color: GOLD;" text="BY LAST NAME" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="21.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <TextField fx:id="searchLastNameField" layoutX="660.0" layoutY="714.0" prefHeight="38.0" prefWidth="241.0">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font></TextField>
+        <Button fx:id="clearButton" layoutX="924.0" layoutY="729.0" mnemonicParsing="false" onAction="#handleClearAction" prefHeight="58.0" prefWidth="126.0" style="-fx-background-color: GOLD;" text="CLEAR" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="21.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <Button fx:id="aboutButton" layoutX="837.0" layoutY="827.0" mnemonicParsing="false" onAction="#handleAboutAction" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GRAY;" text="ABOUT" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="21.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                    </light>
+                </Lighting>
+            </effect>
+        </Button>
+        <Button fx:id="exitButton" layoutX="970.0" layoutY="827.0" mnemonicParsing="false" onAction="#handleExitAction" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GRAY;" text="EXIT" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="21.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                    </light>
+                </Lighting>
+            </effect>
+        </Button>
+        <TableView fx:id="customerTable" layoutX="414.0" layoutY="188.0" prefHeight="522.0" prefWidth="682.0">
+            <columns>
+                <TableColumn fx:id="IDTable" prefWidth="32.0" text="ID" />
+                <TableColumn fx:id="FirstNameTable" prefWidth="96.0" text="FIRST" />
+                <TableColumn fx:id="LastNameTable" prefWidth="97.0" text="LAST" />
+                <TableColumn fx:id="NOTable" prefWidth="27.0" text="#" />
+                <TableColumn fx:id="StreetTable" prefWidth="123.0" text="STREET" />
+                <TableColumn fx:id="CityTable" prefWidth="104.0" text="CITY" />
+                <TableColumn fx:id="StateTable" minWidth="9.0" prefWidth="44.0" text="STATE" />
+                <TableColumn fx:id="PostTable" prefWidth="54.0" text="POSTAL" />
+                <TableColumn fx:id="PhoneTable" prefWidth="104.0" text="PHONE" />
+            </columns>
+        </TableView>
+        <Label layoutX="444.0" prefHeight="145.0" prefWidth="646.0" text="QPROPERTY INFORMATION MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="#d0c9c9" wrapText="true">
+            <font>
+                <Font name="Comic Sans MS Bold" size="42.0" />
+            </font>
+        </Label>
+      <ChoiceBox fx:id="StateField" layoutX="201.0" layoutY="634.0" prefHeight="50.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>

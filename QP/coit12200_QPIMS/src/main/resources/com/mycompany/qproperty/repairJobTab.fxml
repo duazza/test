@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900" prefWidth="1100" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qproperty.RepairTabController">
+
+
+    <Button layoutX="960.0" layoutY="40.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GRAY;" text="ABOUT" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="21.0" />
+        </font>
+        <effect>
+            <Lighting>
+                <bumpInput>
+                    <Shadow />
+                </bumpInput>
+                <light>
+                </light>
+            </Lighting>
+        </effect>
+    </Button>
+    <Button layoutX="960.0" layoutY="95.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GRAY;" text="EXIT" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="21.0" />
+        </font>
+        <effect>
+            <Lighting>
+                <bumpInput>
+                    <Shadow />
+                </bumpInput>
+                <light>
+                </light>
+            </Lighting>
+        </effect>
+    </Button>
+    <ImageView fitHeight="148.0" fitWidth="180.0" layoutX="28.0" layoutY="14.0">
+        <image>
+            <Image url="@qpropertylogo.png" />
+        </image>
+    </ImageView>
+    <Label layoutX="170.0" layoutY="7.0" prefHeight="145.0" prefWidth="878.0" text="QPROPERTY INFORMATION MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="#d0c9c9" wrapText="true">
+        <font>
+            <Font name="Comic Sans MS Bold" size="44.0" />
+        </font>
+    </Label>
+    <Button layoutX="14.0" layoutY="181.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="380.0" style="-fx-background-color: GOLD;" text="NEW REPAIR / MAINTENANCE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Button>
+    <Label layoutX="36.0" layoutY="468.0" text="BOOKING DATE" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <TextField layoutX="193.0" layoutY="512.0" prefHeight="50.0" prefWidth="200.0">
+        <font>
+            <Font name="Calibri" size="23.0" />
+        </font>
+    </TextField>
+    <Label layoutX="108.0" layoutY="523.0" text="CHARGE" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <TextField layoutX="194.0" layoutY="568.0" prefHeight="50.0" prefWidth="200.0">
+        <font>
+            <Font name="Calibri" size="23.0" />
+        </font>
+    </TextField>
+    <Label layoutX="5.0" layoutY="579.0" text="SERVICE STAFF NAME" textFill="WHITE" wrapText="true">
+        <font>
+            <Font name="Calibri Bold" size="21.0" />
+        </font>
+    </Label>
+    <Label layoutX="94.0" layoutY="638.0" text="JOB TYPE" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <ComboBox layoutX="192.0" layoutY="627.0" prefHeight="50.0" prefWidth="203.0" />
+    <Label layoutX="-1.0" layoutY="772.0" text="COMPLETION DATE" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <Button layoutX="16.0" layoutY="743.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="380.0" style="-fx-background-color: GOLD;">
+        <font>
+            <Font name="Calibri Bold" size="1.0" />
+        </font>
+    </Button>
+    <Button layoutX="14.0" layoutY="817.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="180.0" style="-fx-background-color: GOLD;" text="CANCEL" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+        <effect>
+            <InnerShadow />
+        </effect>
+    </Button>
+    <Button layoutX="213.0" layoutY="817.0" mnemonicParsing="false" onAction="#testRepairTabController" prefHeight="44.0" prefWidth="180.0" style="-fx-background-color: GOLD;" text="ADD" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+        <effect>
+            <InnerShadow />
+        </effect>
+    </Button>
+    <Button layoutX="410.0" layoutY="225.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="686.0" style="-fx-background-color: GOLD;" text="SEARCH DATABASE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Button>
+    <TableView layoutX="409.0" layoutY="393.0" prefHeight="421.0" prefWidth="688.0">
+        <columns>
+            <TableColumn prefWidth="50.0" text="ID" />
+            <TableColumn prefWidth="235.0" text="JOB DETAIL" />
+            <TableColumn text="BOOK DATE" />
+            <TableColumn prefWidth="64.0" text="CHARGE" />
+            <TableColumn prefWidth="85.0" text="STAFF NAME" />
+            <TableColumn prefWidth="71.0" text="JOB TYPE" />
+            <TableColumn prefWidth="102.0" text="COMPLETE DATE" />
+        </columns>
+    </TableView>
+    <Button layoutX="715.0" layoutY="819.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: GOLD;" text="UNCOMPLETED" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+        <effect>
+            <InnerShadow />
+        </effect>
+    </Button>
+    <Button layoutX="908.0" layoutY="819.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="187.0" style="-fx-background-color: GOLD;" text="CLEAR" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+        <effect>
+            <InnerShadow />
+        </effect>
+    </Button>
+    <TextField layoutX="194.0" layoutY="342.0" prefHeight="110.0" prefWidth="200.0">
+        <font>
+            <Font name="Calibri" size="23.0" />
+        </font>
+    </TextField>
+    <Label layoutX="66.0" layoutY="358.0" text="JOB DETAILS" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <Button layoutX="531.0" layoutY="818.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="180.0" style="-fx-background-color: GOLD;" text="COMPLETED" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+        <effect>
+            <InnerShadow />
+        </effect>
+    </Button>
+    <Button layoutX="960.0" layoutY="306.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GOLD;" text="VIEW ALL" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="21.0" />
+        </font>
+        <effect>
+            <InnerShadow />
+        </effect>
+    </Button>
+    <Button layoutX="816.0" layoutY="281.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GOLD;" text="SEARCH " textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="21.0" />
+        </font>
+        <effect>
+            <InnerShadow />
+        </effect>
+    </Button>
+    <Label layoutX="439.0" layoutY="287.0" text="SEARCH BY ID" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <Label layoutX="439.0" layoutY="346.0" text="SEARCH BY TYPE" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <TextField layoutX="606.0" layoutY="276.0" prefHeight="50.0" prefWidth="200.0">
+        <font>
+            <Font name="Calibri" size="23.0" />
+        </font>
+    </TextField>
+    <Button layoutX="816.0" layoutY="340.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: GOLD;" text="SEARCH " textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="21.0" />
+        </font>
+        <effect>
+            <InnerShadow />
+        </effect>
+    </Button>
+    <TextField layoutX="606.0" layoutY="335.0" prefHeight="50.0" prefWidth="200.0">
+        <font>
+            <Font name="Calibri" size="23.0" />
+        </font>
+    </TextField>
+    <TextField layoutX="193.0" layoutY="232.0" prefHeight="50.0" prefWidth="200.0" text="AUTO GENERATED">
+        <font>
+            <Font name="Calibri" size="23.0" />
+        </font>
+    </TextField>
+    <Label layoutX="90.0" layoutY="243.0" text="REPAIR ID" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <Label layoutX="105.0" layoutY="695.0" text="STATUS" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <ComboBox layoutX="191.0" layoutY="684.0" prefHeight="50.0" prefWidth="203.0" />
+    <TextField layoutX="193.0" layoutY="287.0" prefHeight="50.0" prefWidth="200.0">
+        <font>
+            <Font name="Calibri" size="23.0" />
+        </font>
+    </TextField>
+    <Label layoutX="60.0" layoutY="298.0" text="PROPERTY ID" textFill="WHITE">
+        <font>
+            <Font name="Calibri Bold" size="24.0" />
+        </font>
+    </Label>
+    <DatePicker layoutX="193.0" layoutY="456.0" prefHeight="53.0" prefWidth="200.0" />
+    <DatePicker layoutX="194.0" layoutY="756.0" prefHeight="53.0" prefWidth="200.0" />
+</AnchorPane>
